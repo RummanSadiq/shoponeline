@@ -3,10 +3,8 @@
 
  const GridComponent = (props) =>{
   return (
-    <div className="grid-component">
-      <div className="grid-component-container">
-       {props.children}
-      </div>
+    <div className="grid-component-container">
+      {props.children}
     </div>
   )
  }
