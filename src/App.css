@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
+/* footer style start here */
+
 .footer-container{
   background-color: #ECDAD5;
 }
@@ -76,3 +79,78 @@ label {
 .form{
 margin-top: 40px;
 }
+
+
+/* footer style end here */
+
+
+
+/* topheader style start here */
+.topheader-container{
+  background-color: #E9E9E9;
+}
+
+.theader-component{
+  float: left;
+  width: 33.33%;
+  height: 40px;
+}
+
+ul{
+  list-style-type: none;
+  margin-top:0px;
+  margin-bottom: 0px;
+  padding:0px;
+}
+ul::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+li{
+  display: inline-block;
+  padding:12px;
+
+}
+li a{
+  text-decoration: none;
+  color: rgb(110,110,110);
+}
+.topheader-container::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.select_input {
+  display: inline;
+  text-align: inherit;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 60px;
+}
+.thc1{
+  width: 100%;
+  text-align: left;
+}
+.thc2{
+  text-align: center;
+}
+.thc3{
+  text-align: right;
+}
+/* topheader style end here */
