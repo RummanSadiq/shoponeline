@@ -154,3 +154,29 @@ li a{
   text-align: right;
 }
 /* topheader style end here */
+
+
+/* Navbarheader start here */
+a.df{
+  font-size: 25px;
+}
+.navbar-header ul{
+  text-align: center;
+}
+
+.navbar-header{
+  padding: 30px 100px;
+}
+
+.navbar-header ul li a{
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-header ul li{
+  width: auto;
+  height: 25px;
+  padding: 0px 30px;
+  margin:0px 15px;
+}
+/* Navbarheader end here */
