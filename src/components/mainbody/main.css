@@ -1,0 +1,23 @@
+.main-container{
+  background-color: #f8f8fa;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-top: 150px;
+}
+
+.m-component2{
+  flex-grow: 0.5;
+  text-align: center;
+}
+
+.m-component1{
+  margin-top: 150px;
+}
+
+
+.gallery-img{
+  box-shadow: 3px 4px 12px -5px #7a7a7a;
+  margin-bottom: 6px;
+}
