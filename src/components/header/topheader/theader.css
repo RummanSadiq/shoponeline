@@ -1,0 +1,57 @@
+/* topheader style */
+
+.topheader-container{
+  list-style: none;
+  margin: 0px;
+  padding: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(233,233,233);
+}
+
+/* topheader component 3 style */
+.thcomponent2{
+  color: rgb(110,110,110);
+}
+.thcomponent3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(110,110,110);
+}
+
+.topheader-container .div1{
+flex-grow: 1;
+}
+
+.topheader-container .div2{
+  flex-grow: 1;
+  text-align: right;
+}
+.topheader-container .div3{
+  flex-grow: 2;
+  text-align: right;
+}
+
+.thcomponent3 .thc3{
+  margin: 0px 10px;
+}
+
+.thcomponent3 .select{
+  flex-grow: 0.1;
+}
+
+
+.thc3component4{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: top;
+}
+.cartcomponent{
+ margin: 0px 5px;
+ color: rgb(110,110,110);
+}

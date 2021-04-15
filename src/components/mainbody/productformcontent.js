@@ -3,18 +3,18 @@ import PfComponent from './pfcomponent';
 
 const ProductFContent = () => {
   return (
-    <div className="productform-content">
+    <div className="productform-content main-component">
       <PfComponent>
-        <div className='pfc-header'>
-          <h1>The Special Pantsuit</h1>
+        <div className='pfc pfc-header'>
+          <h3>The Special Pantsuit</h3>
           <p>$120 USD</p>
         </div>
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-size-component'>
+        <div className='pfc pfc-size-component'>
           <h5>SELECT YOUR SIZE</h5>
-          <span>View Size Guide</span>
+          <span className="view">View Size Guide</span>
           <div className="size-ul">
             <ul>
               <li><span>S</span></li>
@@ -27,7 +27,7 @@ const ProductFContent = () => {
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-color-component'>
+        <div className='pfc pfc-color-component'>
           <h5>SELECT YOUR COLOR</h5>
           <div className="color-ul">
             <ul>
@@ -41,9 +41,9 @@ const ProductFContent = () => {
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-material-component'>
+        <div className='pfc pfc-material-component'>
           <h5>SELECT MATERIAL</h5>
-          <span>View Material Guide</span>
+          <span className="view">View Material Guide</span>
           <div className="material-ul">
             <ul>
               <li><span>Silk</span></li>
@@ -53,7 +53,7 @@ const ProductFContent = () => {
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-quantity-component'>
+        <div className='pfc pfc-quantity-component'>
           <h5>SELECT QUANTITY</h5>
           <div className="quantity-ul">
             <ul>
@@ -61,15 +61,15 @@ const ProductFContent = () => {
               <li><input type="number" value='0' name='quantity'/></li>
               <li><span>+</span></li>
             </ul>
-            <span>Available Quantity:{}</span>
+            <span className="view">Available Quantity:{}</span>
           </div>
         </div>
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-product-desc'>
+        <div className='pfcdb pfc-product-desc'>
           <p>This is the coolest pantsuit you"ve ever seen. Fits like a dream. Wear this everywhere, and nowhere.</p>
-          <ul>
+          <ul className="p-detail">
             <li>So baggy and yet hugs all the right places</li>
             <li>Big hidden pockets</li>
             <li>Front zipper so you can zip yourself in</li>
@@ -79,7 +79,7 @@ const ProductFContent = () => {
       </PfComponent>
 
       <PfComponent>
-        <div className='pfc-addtocart-button'>
+        <div className='pfcdb pfc-addtocart-button'>
           <button type="button" className="addtocart-btn">ADD TO BAG</button>
         </div>
       </PfComponent>

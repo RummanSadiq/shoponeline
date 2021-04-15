@@ -42,7 +42,7 @@ class GalleryComponent extends Component{
       )
     })
     return (
-      <div className='gallery'>
+      <div className='gallery main-component'>
         <div className="gallery-thumnail">
         {galleryList}
         </div>
