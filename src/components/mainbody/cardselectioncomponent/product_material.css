@@ -1,0 +1,27 @@
+.pm-heading{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+}
+
+.pm-header{
+  margin:0px;
+}
+.pm-text{
+  font-size: 10px;
+  text-decoration:underline;
+  padding-top: 2px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.material_name {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(205, 98, 125);
+  border-radius: 50px;
+  background-color: rgb(205, 98, 125);
+  color: white;
+  line-height: 36px;
+  text-align: center;
+}
