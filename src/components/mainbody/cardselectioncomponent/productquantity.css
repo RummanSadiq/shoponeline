@@ -1,0 +1,19 @@
+.pq-grid{
+  display: grid;
+  grid-template-columns: 36px 36px 36px;
+  column-gap: 0px;
+  margin-top: 10px;
+}
+
+.pq-header{
+  text-transform: uppercase;
+}
+
+.pq-comp{
+  border: 1px solid #cacaca;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
