@@ -1,0 +1,11 @@
+.card-page{
+  margin: 30px;
+}
+
+.card-page-header{
+  border-top:1px solid rgb(233,233,233);
+  border-bottom:1px solid rgb(233,233,233);
+  color: rgb(110,110,110);
+  padding: 10px 0px;
+  text-align: center;
+}
