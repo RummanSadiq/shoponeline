@@ -106,3 +106,24 @@
 .edit-page-product-image img{
   border-radius: 50%;
 }
+
+/* product detail of edit page */
+
+.ep-product-detail-quantity{
+  display: inline-grid;
+  grid-template-columns: 36px 36px 36px;
+  grid-auto-rows: 36px;
+  border:1px solid rgb(233,233,233);
+  line-height: 36px;
+
+}
+
+.ep-product-detail-quantity div {
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.ep-product-detail-stock p{
+  color: #01C534;
+}
