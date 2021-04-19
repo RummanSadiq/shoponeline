@@ -1,9 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 const count = 1;
 const CartText = () =>{
   return(
     <div className="cartcomponent carttext">
-      <span>{count} BAG</span>
+      <Link to='/cardpage'>
+        <span>{count} BAG</span>
+      </Link>
     </div>
   )
 }

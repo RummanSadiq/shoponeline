@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import './theader.css';
-// import {IconContext} from 'react-icons';
-// import { FaGift, FaShoppingBag, FaUser } from "react-icons/fa";
 import ThComponent1 from "./thcomponent1";
 import ThComponent2 from "./thcomponent2";
 import ThComponent3 from "./thcomponent3";
-// import THeaderComponent from "./topheadercomponent";
 
 class TopHeader extends Component{
   render(){

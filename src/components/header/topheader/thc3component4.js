@@ -6,12 +6,8 @@ import CartText from './carttext';
 const Thc3Component4 = () =>{
   return(
     <div className="thc3component thc3component4">
-      <div>
-        <CartLogo />
-      </div>
-      <div>
-        <CartText />
-      </div>
+      <div><CartLogo /></div>
+      <div><CartText /></div>
     </div>
   )
 }

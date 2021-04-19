@@ -63,3 +63,9 @@ font-weight: bold;
   border-radius: 2px;
   cursor: pointer;
 }
+
+.nbdiv > a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
