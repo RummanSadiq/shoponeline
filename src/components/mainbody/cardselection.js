@@ -1,4 +1,5 @@
 import React from 'react';
+import CardButton from './cardselectioncomponent/cardbutton';
 import ColorSelection from './cardselectioncomponent/colorselection';
 import CsHeader from './cardselectioncomponent/csheader';
 import ProductDesc from './cardselectioncomponent/productdesc';
@@ -15,7 +16,7 @@ const CardSelection = () => {
       <div className="item4 gib "><ProductMaterial /></div>
       <div className="item5 gib"><ProductQuantity /></div>
       <div className="item6"><ProductDesc /></div>
-      <div className="item7">7</div>
+      <div className="item7"><CardButton /></div>
     </div>
   )
 }

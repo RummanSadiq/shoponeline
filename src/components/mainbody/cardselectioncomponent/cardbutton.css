@@ -1,0 +1,10 @@
+.add-to-card {
+text-transform: uppercase;
+color: white;
+background-color: #CD627D;
+border: 2px solid #CD627D;
+padding: 16px 20px;
+cursor: pointer;
+text-align: center;
+width: 100%;
+}
