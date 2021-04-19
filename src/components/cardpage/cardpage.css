@@ -2,9 +2,7 @@
   margin: 30px;
 }
 
-.sub-total-card{
-  border:1px solid rgb(233,233,233);
-}
+
 
 .card-page-header{
   border-top:1px solid rgb(233,233,233);
@@ -26,7 +24,9 @@
   width: 90%;
   margin: auto;
 }
-
+.sub-total-card{
+  border:1px solid rgb(233,233,233);
+}
 .st-card-header{
   display: grid;
   grid-template-columns: auto auto;
@@ -67,4 +67,42 @@
 
 .st-card-component{
   margin-top: 15px;
+}
+
+
+/*product edit page */
+
+.product-edit-page{
+  border-top: 1px solid rgb(233,233,233);
+  position: relative;
+}
+
+.close-button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.edit-page-content{
+  margin-top: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.pep-product-image{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.edit-page-product-image{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.edit-page-product-image img{
+  border-radius: 50%;
 }
