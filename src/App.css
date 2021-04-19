@@ -12,7 +12,7 @@
   padding: 50px;
 
 }
-.grid-container{
+.footer-container .grid-container{
   display: flex;
   justify-content: center;
   text-align: center;
