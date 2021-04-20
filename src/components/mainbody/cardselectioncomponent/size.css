@@ -34,7 +34,7 @@ border-radius: 50%;
 cursor: pointer;
 }
 
-.size-S:active{
+.active{
   background-color: rgb(205, 98, 125);
   border-color:rgb(205, 98, 125);
 }

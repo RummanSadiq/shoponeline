@@ -1,19 +1,14 @@
 import React,{Component} from 'react';
 import './size.css';
+import {connect} from 'react-redux';
 
 class SizeType extends Component {
   render(){
-    const size =[
-      {id:1, sizetype:'S'},
-      {id:2, sizetype:'M'},
-      {id:3, sizetype:'L'},
-      {id:4, sizetype:'XL'}
-    ];
-    const sizelist = size.map((s) => {
-      const className = "size-type size-" + s.sizetype;
+    const sizelist = this.props.size.map((s) => {
+      const className = s.type===this.props.size_type&&this.props.selected?"size-type active":'size-type'
       return(
-        <div className={className} key={s.id}>
-          {s.sizetype}
+        <div onClick={()=>this.props.updateSize(s.type)} className={className} key={s.id}>
+          {s.type}
         </div>
       )
     })
@@ -25,5 +20,17 @@ class SizeType extends Component {
   }
 }
 
+const mapStateToProps = (state) =>{
+  return{
+    size:state.rR.sizes,
+    size_type:state.sR.size_type,
+    selected:state.sR.selected
+  }
+}
 
-export default SizeType;
+const mapDispatchToProps = (dispatch) =>{
+  return{
+    updateSize:(size_type)=>dispatch({type:'UPDATE_SIZE',size_type})
+  }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(SizeType);

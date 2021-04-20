@@ -10,17 +10,16 @@ const products ={
   type:'t-shirt',
   price:120,
   images:[
-    {id:1,text:'img1',img:img1,selected:true},
-    {id:2,text:'img2',img:img2,selected:false},
-    {id:3,text:'img3',img:img3,selected:false},
-    {id:4,text:'img4',img:img4,selected:false},
-    {id:5,text:'img5',img:img5,selected:false},
+    {id:1,text:'img1',img:img1},
+    {id:2,text:'img2',img:img2},
+    {id:3,text:'img3',img:img3},
+    {id:4,text:'img4',img:img4},
+    {id:5,text:'img5',img:img5},
   ],
   sizes:[
     {
       id:1,
-      type:'s',
-      selected:false,
+      type:'S',
       colors:[
         {
           id:1,
@@ -40,8 +39,7 @@ const products ={
     },
     {
       id:2,
-      type:'m',
-      selected:false,
+      type:'M',
       colors:[
         {
           id:1,
@@ -61,8 +59,7 @@ const products ={
     },
     {
       id:3,
-      type:'l',
-      selected:false,
+      type:'L',
       colors:[
         {
           id:1,
@@ -82,8 +79,7 @@ const products ={
     },
     {
       id:4,
-      type:'xl',
-      selected:false,
+      type:'XL',
       colors:[
         {
           id:1,
