@@ -5,7 +5,7 @@ class Gallery extends Component {
   render(){
     const galleryList = this.props.gallery.map((g)=>{
       return(
-        <div className='gallery-img' href ="/" key={g.id}>
+        <div className='gallery-img' onClick={()=>this.props.updateImage(g.img)} key={g.id}>
           <img src={g.img} alt={g.text} width="50px" height="50px"/>
         </div>
       )
@@ -20,11 +20,13 @@ class Gallery extends Component {
 }
 
 const mapStateToprops = (state) =>{
-return {gallery:state.images};
+return {gallery:state.rR.images};
 }
 
 const mapDispatchToProps = (dispatch) =>{
-
+  return{
+    updateImage:(img) => dispatch({type:'UPDATE_IMAGE',img})
+  }
 }
 
-export default connect(mapStateToprops,null)(Gallery);
+export default connect(mapStateToprops,mapDispatchToProps)(Gallery);

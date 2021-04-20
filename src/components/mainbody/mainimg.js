@@ -1,12 +1,17 @@
 import React from 'react';
-import img1 from '../../assests/images/img1.jpg'
+import {connect} from 'react-redux';
 
-const MianImg = () =>{
+const MianImg = (props) =>{
   return(
     <div className="main-img">
-      <img src={img1} alt="image1" width="700px" height="700px"/>
+      <img src={props.img1} alt="image1" width="700px" height="700px"/>
     </div>
   )
 }
 
-export default MianImg;
+const mapStateToprops = (state, ownProps) =>{
+  return{
+    img1:state.uiR.img
+  }
+}
+export default connect(mapStateToprops)(MianImg);
