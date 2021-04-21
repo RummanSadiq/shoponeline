@@ -37,4 +37,5 @@ cursor: pointer;
 .active{
   background-color: rgb(205, 98, 125);
   border-color:rgb(205, 98, 125);
+  color: white;
 }

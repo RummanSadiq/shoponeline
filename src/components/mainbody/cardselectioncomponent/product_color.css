@@ -32,3 +32,9 @@
   border: 1px solid blue;
   border-radius: 50%;
 }
+
+.color_name{
+  text-align: center;
+  line-height: 36px;
+  color: white;
+}

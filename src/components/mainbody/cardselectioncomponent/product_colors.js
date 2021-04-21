@@ -1,18 +1,18 @@
 import React,{Component} from 'react';
 import './product_color.css';
+import {connect} from 'react-redux';
+import {FaCheck} from 'react-icons/fa';
+
 
 class ProductColorType extends Component {
   render(){
-    const product_colors =[
-      {id:1, color_name:'black'},
-      {id:2, color_name:'red'},
-      {id:3, color_name:'yellow'},
-      {id:4, color_name:'blue'}
-    ];
-    const colorlist = product_colors.map((color) => {
-      const className = "color_name color-" + color.color_name;
+    const colorlist = this.props.product_colors.map((color) => {
+      const className = "color_name color-" + color.color_type;
+      const colors = this.props.colors.filter(c => c.type===this.props.size_type);
+      const colos =colors[0].colors.map(c => c.name)
+      console.log(colos[1]);
       return(
-        <div className={className} key={color.id}></div>
+        <div  onClick={()=>this.props.updateColor(color.color_type)} className={className} key={color.id}>{this.props.color_type===color.color_type?<FaCheck />:''}</div>
       )
     })
     return(
@@ -23,5 +23,19 @@ class ProductColorType extends Component {
   }
 }
 
+const mapStateToProps = (state) =>{
+  return{
+    product_colors:state.cR.colors,
+    size_type:state.sR.size_type,
+    colors:state.rR.sizes,
+    color_type:state.cR.color_type
+  }
+}
 
-export default ProductColorType;
+const mapDispatchToProps = (dispatch) =>{
+  return{
+    updateColor:(color_type) => dispatch({type:'UPDATE_COLOR',color_type})
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProductColorType);
